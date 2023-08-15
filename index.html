@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Les Bonnes Pièces</title>
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="pieces.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<img src="images/logo-les-bonnes-pieces.png" alt="LOGO">
+			<h1>Les Bonnes Pièces</h1>
+		</header>
+		<main>
+			<!-- Menu de recherche -->
+			<section class="filtres">
+				<h3>Filtres</h3>
+				<button class="btn-trierCr">Tri croissant</button>
+				<br>
+				<button class="btn-trierDecr">Tri décroissant</button>
+				<br>
+				<button class="btn-filtrer">Filtrer les pièces non abordables</button>
+				<br>
+				<button class="btn-havingDesc">Filtrer les pièces non décrites</button>
+				<br>
+				<p>Prix maximum </p>
+				<input id="prixMax" name="prixMax" type="range" max="60" min="0" step="5">
+				<h3>Ajouter un avis</h3>
+				<form class="formulaire-avis">
+					<table>
+						<tr><td>ID of piece :<br></td></tr>
+						<tr><td><input type="number" name="piece-id"><br></td></tr>
+					    <tr><td>Username :<br></td></tr>
+				        <tr><td><input type="text" name="username"><br></td></tr>
+						<tr><td>Comment :<br></td></tr>
+						<tr><td><input type="text" name="comment"><br></td></tr>
+						<tr><td>Rating :<br></td></tr>
+					    <tr><td><input type="number" name="rating"><br><br></td></tr>
+					    <tr><td><button>Send</button></td></tr>
+					</table>
+				</form>
+				<h3>DATA</h3>
+				<button class="btn-update">Update</button>
+			</section>
+			<h4>Pièces abordables : </h4>	
+			<p class="affordable"></p>
+			<h4>Pièces disponibles : </h4>	
+			<p class="available"></p>
+			<!-- Fiches produits -->
+			<section class="fiches">
+			</section>
+		</main>
+	</body>
+</html>
